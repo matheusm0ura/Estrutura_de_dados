@@ -1,4 +1,4 @@
-package lista_encadeada;
+package fila_encadeada;
 
 public class No <T> {
     private T valor;

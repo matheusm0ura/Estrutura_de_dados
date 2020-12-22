@@ -1,12 +1,14 @@
-package lista_encadeada;
+package fila_encadeada;
 
-public class ListaEncadeada<T> implements TADListaEncadeada <T>{
+import java.util.ArrayList;
 
-    private No<T> cabeca;
+public class FilaEncadeada<T> implements TADFilaEncadeada<T> {
+
+    public No<T> cabeca;
     private int tamanho;
-    
+    ArrayList<T> lista =  new ArrayList<>();
 
-    public ListaEncadeada() {
+    public FilaEncadeada() {
         cabeca = null;
         tamanho = 0;
     }
@@ -117,6 +119,7 @@ public class ListaEncadeada<T> implements TADListaEncadeada <T>{
         System.out.println();
     }
 
+
     public  No<T> getCauda(){
         No<T> aux = cabeca;
 
@@ -128,4 +131,5 @@ public class ListaEncadeada<T> implements TADListaEncadeada <T>{
         }
         return aux;
     }
+
 }

@@ -1,6 +1,6 @@
-package lista_encadeada;
+package fila_encadeada;
 
-public interface TADListaEncadeada <T> {
+public interface TADFilaEncadeada<T> {
 
     void insereInicio(T valor);
     void inserePosicao(T valor, int posicao);
@@ -10,4 +10,6 @@ public interface TADListaEncadeada <T> {
 
     boolean listaVazia();
     void imprimiLista();
+
+
 }
